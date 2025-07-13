@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Multi-Device API Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .status-bar {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .status-card {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .status-card h3 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .status-card.warning {
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+        }
+
+        .status-card.danger {
+            background: linear-gradient(135deg, #f44336, #d32f2f);
+        }
+
+        .connection-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #f44336;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.connected {
+            background: #4CAF50;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .panel {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .panel h2 {
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .device-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .device-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007bff;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .device-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .device-item.ready {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+
+        .device-item.qr_ready {
+            border-left-color: #ffc107;
+            background: #fff3cd;
+        }
+
+        .device-item.error {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+
+        .device-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .device-id {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .device-status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .status-ready { background: #d4edda; color: #155724; }
+        .status-qr_ready { background: #fff3cd; color: #856404; }
+        .status-initializing { background: #cce7ff; color: #004085; }
+        .status-error { background: #f8d7da; color: #721c24; }
+        .status-disconnected { background: #e2e3e5; color: #383d41; }
+        .status-authenticated { background: #d1ecf1; color: #0c5460; }
+
+        .device-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-small {
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-view-qr {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-remove {
+            background: #dc3545;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .messages-panel {
+            grid-column: 1 / -1;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .message-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #17a2b8;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .message-body {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .qr-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .qr-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .qr-image {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            z-index: 1001;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background: #28a745;
+        }
+
+        .notification.error {
+            background: #dc3545;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .status-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 WhatsApp Multi-Device API</h1>
+            <p>Real-time Dashboard & Control Panel</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-grid">
+                <div class="status-card">
+                    <h3 id="totalDevices">0</h3>
+                    <p>Total Devices</p>
+                </div>
+                <div class="status-card" id="readyCard">
+                    <h3 id="readyDevices">0</h3>
+                    <p>Ready Devices</p>
+                </div>
+                <div class="status-card warning">
+                    <h3 id="totalMessages">0</h3>
+                    <p>Messages Today</p>
+                </div>
+                <div class="status-card">
+                    <h3 id="uptime">0s</h3>
+                    <p>Server Uptime</p>
+                </div>
+            </div>
+            <div class="connection-status">
+                <div class="status-dot" id="connectionDot"></div>
+                <span id="connectionStatus">Connecting...</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="panel">
+                <h2>🔗 Add New Device</h2>
+                <form id="deviceForm">
+                    <div class="form-group">
+                        <label for="deviceId">Device ID</label>
+                        <input type="text" id="deviceId" class="form-control" placeholder="e.g., device1, phone1, etc." required>
+                    </div>
+                    <button type="submit" class="btn">
+                        <span id="addBtnText">Add Device</span>
+                        <div id="addBtnLoading" class="loading" style="display: none;"></div>
+                    </button>
+                </form>
+            </div>
+
+            <div class="panel">
+                <h2>📋 Connected Devices</h2>
+                <div class="device-list" id="deviceList">
+                    <p style="text-align: center; color: #666; padding: 20px;">No devices connected yet</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>💬 Send Message</h2>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="msgDeviceId">Device</label>
+                        <select id="msgDeviceId" class="form-control" required>
+                            <option value="">Select Device</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient">Recipient (Phone Number)</label>
+                        <input type="text" id="recipient" class="form-control" placeholder="6281234567890@c.us" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="3" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="panel messages-panel">
+                <h2>📨 Recent Messages</h2>
+                <div id="messagesList">
+                    <p style="text-align: center; color: #666; padding: 20px;">No messages yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div class="qr-modal" id="qrModal">
+        <span class="close-btn" onclick="closeQRModal()">&times;</span>
+        <div class="qr-content">
+            <h3>📱 Scan QR Code</h3>
+            <p>Open WhatsApp on your phone and scan this QR code</p>
+            <img id="qrImage" class="qr-image" alt="QR Code">
+            <p><strong>Device:</strong> <span id="qrDeviceId"></span></p>
+        </div>
+    </div>
+
+    <script>
+        class WhatsAppDashboard {
+            constructor() {
+                this.socket = io();
+                this.devices = new Map();
+                this.messages = [];
+                this.messageCount = 0;
+                this.startTime = Date.now();
+                
+                this.initializeEventListeners();
+                this.initializeSocketHandlers();
+                this.startUptimeCounter();
+            }
+
+            initializeEventListeners() {
+                document.getElementById('deviceForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.addDevice();
+                });
+
+                document.getElementById('messageForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.sendMessage();
+                });
+            }
+
+            initializeSocketHandlers() {
+                this.socket.on('connect', () => {
+                    console.log('✅ Connected to server');
+                    this.updateConnectionStatus(true);
+                    this.socket.emit('get_devices_status');
+                });
+
+                this.socket.on('disconnect', () => {
+                    console.log('❌ Disconnected from server');
+                    this.updateConnectionStatus(false);
+                });
+
+                this.socket.on('welcome', (data) => {
+                    console.log('Welcome:', data);
+                    this.updateStats(data.stats);
+                    this.updateDevicesList(data.devices);
+                });
+
+                this.socket.on('qr_code', (data) => {
+                    console.log('📱 QR Code received:', data);
+                    this.showQRCode(data);
+                });
+
+                this.socket.on('device_status', (data) => {
+                    console.log('📊 Device status update:', data);
+                    this.updateDeviceStatus(data);
+                });
+
+                this.socket.on('message_received', (data) => {
+                    console.log('📨 Message received:', data);
+                    this.addMessage(data);
+                });
+
+                this.socket.on('devices_status', (data) => {
+                    this.updateDevicesList(data.devices);
+                });
+
+                this.socket.on('device_created', (data) => {
+                    this.showNotification('Device created successfully!', 'success');
+                });
+
+                this.socket.on('message_sent', (data) => {
+                    this.showNotification('Message sent successfully!', 'success');
+                });
+
+                this.socket.on('error', (error) => {
+                    console.error('❌ Socket error:', error);
+                    this.showNotification(error.message, 'error');
+                });
+            }
+
+            updateConnectionStatus(connected) {
+                const dot = document.getElementById('connectionDot');
+                const status = document.getElementById('connectionStatus');
+                
+                if (connected) {
+                    dot.classList.add('connected');
+                    status.textContent = 'Connected';
+                } else {
+                    dot.classList.remove('connected');
+                    status.textContent = 'Disconnected';
+                }
+            }
+
+            addDevice() {
+                const deviceId = document.getElementById('deviceId').value.trim();
+                if (!deviceId) return;
+
+                const btn = document.getElementById('addBtnText');
+                const loading = document.getElementById('addBtnLoading');
+                
+                btn.style.display = 'none';
+                loading.style.display = 'inline-block';
+
+                this.socket.emit('create_device', { deviceId });
+
+                setTimeout(() => {
+                    btn.style.display = 'inline';
+                    loading.style.display = 'none';
+                    document.getElementById('deviceId').value = '';
+                }, 2000);
+            }
+
+            sendMessage() {
+                const deviceId = document.getElementById('msgDeviceId').value;
+                const to = document.getElementById('recipient').value;
+                const message = document.getElementById('message').value;
+
+                if (!deviceId || !to || !message) return;
+
+                this.socket.emit('send_message', { deviceId, to, message });
+                document.getElementById('message').value = '';
+            }
+
+            updateStats(stats) {
+                document.getElementById('totalDevices').textContent = stats.totalDevices || 0;
+                document.getElementById('readyDevices').textContent = stats.readyDevices || 0;
+                
+                const readyCard = document.getElementById('readyCard');
+                if (stats.readyDevices > 0) {
+                    readyCard.className = 'status-card';
+                } else {
+                    readyCard.className = 'status-card warning';
+                }
+            }
+
+            updateDevicesList(devices) {
+                const deviceList = document.getElementById('deviceList');
+                const deviceSelect = document.getElementById('msgDeviceId');
+                
+                if (!devices || devices.length === 0) {
+                    deviceList.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">No devices connected yet</p>';
+                    deviceSelect.innerHTML = '<option value="">Select Device</option>';
+                    return;
+                }
+
+                deviceList.innerHTML = '';
+                deviceSelect.innerHTML = '<option value="">Select Device</option>';
+
+                devices.forEach(device => {
+                    // Update device list
+                    const deviceItem = document.createElement('div');
+                    deviceItem.className = `device-item ${device.status}`;
+                    deviceItem.innerHTML = `
+                        <div class="device-header">
+                            <span class="device-id">${device.deviceId}</span>
+                            <span class="device-status status-${device.status}">${device.status}</span>
+                        </div>
+                        <div class="device-actions">
+                            ${device.status === 'qr_ready' ? `<button class="btn-small btn-view-qr" onclick="dashboard.viewQRCode('${device.deviceId}')">View QR</button>` : ''}
+                            <button class="btn-small btn-remove" onclick="dashboard.removeDevice('${device.deviceId}')">Remove</button>
+                        </div>
+                    `;
+                    deviceList.appendChild(deviceItem);
+
+                    // Update device select for messaging
+                    if (device.status === 'ready') {
+                        const option = document.createElement('option');
+                        option.value = device.deviceId;
+                        option.textContent = device.deviceId;
+                        deviceSelect.appendChild(option);
+                    }
+                });
+
+                this.updateStats({
+                    totalDevices: devices.length,
+                    readyDevices: devices.filter(d => d.status === 'ready').length
+                });
+            }
+
+            updateDeviceStatus(data) {
+                this.socket.emit('get_devices_status');
+            }
+
+            addMessage(messageData) {
+                this.messageCount++;
+                document.getElementById('totalMessages').textContent = this.messageCount;
+
+                const messagesList = document.getElementById('messagesList');
+                if (messagesList.children[0] && messagesList.children[0].tagName === 'P') {
+                    messagesList.innerHTML = '';
+                }
+
+                const messageItem = document.createElement('div');
+                messageItem.className = 'message-item';
+                messageItem.innerHTML = `
+                    <div class="message-header">
+                        <span><strong>From:</strong> ${messageData.sender.name || messageData.sender.number}</span>
+                        <span><strong>Device:</strong> ${messageData.deviceId}</span>
+                        <span>${new Date(messageData.timestamp * 1000).toLocaleString()}</span>
+                    </div>
+                    <div class="message-body">${messageData.body}</div>
+                `;
+                
+                messagesList.insertBefore(messageItem, messagesList.firstChild);
+
+                // Keep only last 50 messages
+                while (messagesList.children.length > 50) {
+                    messagesList.removeChild(messagesList.lastChild);
+                }
+            }
+
+            showQRCode(data) {
+                const modal = document.getElementById('qrModal');
+                const image = document.getElementById('qrImage');
+                const deviceId = document.getElementById('qrDeviceId');
+                
+                image.src = data.qrImageUrl;
+                deviceId.textContent = data.deviceId;
+                modal.style.display = 'flex';
+            }
+
+            viewQRCode(deviceId) {
+                fetch(`/api/devices/${deviceId}/qr`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            this.showQRCode(data.data);
+                        } else {
+                            this.showNotification(data.error, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        this.showNotification('Failed to get QR code', 'error');
+                    });
+            }
+
+            removeDevice(deviceId) {
+                if (confirm(`Are you sure you want to remove device ${deviceId}?`)) {
+                    this.socket.emit('remove_device', { deviceId });
+                }
+            }
+
+            showNotification(message, type = 'success') {
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.textContent = message;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => notification.classList.add('show'), 100);
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => document.body.removeChild(notification), 300);
+                }, 3000);
+            }
+
+            startUptimeCounter() {
+                setInterval(() => {
+                    const uptime = Math.floor((Date.now() - this.startTime) / 1000);
+                    const hours = Math.floor(uptime / 3600);
+                    const minutes = Math.floor((uptime % 3600) / 60);
+                    const seconds = uptime % 60;
+                    
+                    document.getElementById('uptime').textContent = 
+                        hours > 0 ? `${hours}h ${minutes}m ${seconds}s` : 
+                        minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
+                }, 1000);
+            }
+        }
+
+        function closeQRModal() {
+            document.getElementById('qrModal').style.display = 'none';
+        }
+
+        // Initialize dashboard when page loads
+        let dashboard;
+        document.addEventListener('DOMContentLoaded', () => {
+            dashboard = new WhatsAppDashboard();
+        });
+    </script>
+</body>
+</html>

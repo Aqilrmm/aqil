@@ -1,0 +1,1966 @@
+CRITICAL - 2025-05-12 04:36:47 --> Error: Class "App\Models\StoreModel" not found
+[Method: GET, Route: registrasi]
+in APPPATH/Controllers/Home.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 04:54:15 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55000, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(40): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(40): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 04:54:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`email`, `password`, `AccountId`) VALUES (:email:, :password:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(40): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:18:40 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('0.0.0.0', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55000, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:18:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:20:52 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:20:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:22:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:22:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:22:34 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:22:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:23:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:23:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:24:53 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.01', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:24:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:30:08 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.01', 'root', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:30:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:30:35 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'root', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:30:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:33:35 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'root', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(44): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 05:33:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `RoleId`, `AccountId`) VALUES (:Email:, :Password:, :RoleId:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(44): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 05:36:21 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'root', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Controllers/Debug.php(13): CodeIgniter\Database\BaseConnection->query('SELECT 1')
+#4 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#5 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#6 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Controllers/Debug.php(13): CodeIgniter\Database\BaseConnection->query('SELECT 1')
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-05-12 05:36:45 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'root', Object(SensitiveParameterValue), 'Jualin', 55002, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Controllers/Debug.php(13): CodeIgniter\Database\BaseConnection->query('SELECT 1')
+#4 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#5 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#6 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Controllers/Debug.php(13): CodeIgniter\Database\BaseConnection->query('SELECT 1')
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-05-12 05:39:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'test', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:40:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:40:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:41:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'Jualin', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+ERROR - 2025-05-12 05:45:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('mysql', 'root', Object(SensitiveParameterValue), 'test', NULL, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#4 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#5 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.3' (using password: NO) in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/app/Controllers/Debug.php(36): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Debug->db()
+#3 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debug))
+#4 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#6 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#7 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#8 {main}
+CRITICAL - 2025-05-12 06:00:07 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: registrasi]
+in APPPATH/Models/AccountModel.php on line 78.
+ 1 APPPATH/Models/AccountModel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', '/var/www/html/app/Models/AccountModel.php', 78)
+ 2 SYSTEMPATH/BaseModel.php(1701): App\Models\AccountModel->hashPassword([...])
+ 3 SYSTEMPATH/BaseModel.php(840): CodeIgniter\BaseModel->trigger('beforeInsert', [...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Home.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 06:02:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 55000, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(46): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/app/Controllers/Home.php(46): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-12 06:02:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`Email`, `Password`, `FullName`, `PhoneNumber`, `BirthDate`, `RoleId`, `created_at`, `updated_at`, `AccountId`) VALUES (:Email:, :Password:, :FullName:, :PhoneNumber:, :BirthDate:, :RoleId:, :created_at:, :updated_at:, :AccountId:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/Home.php(46): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:07:33 --> ErrorException: Undefined array key "AccountId"
+[Method: POST, Route: registrasi]
+in APPPATH/Controllers/Home.php on line 47.
+ 1 APPPATH/Controllers/Home.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "AccountId"', '/var/www/html/app/Controllers/Home.php', 47)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:14:13 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\AccountModel::whare
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Model.php on line 930.
+ 1 APPPATH/Controllers/Home.php(47): CodeIgniter\Model->__call('whare', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:14:42 --> CodeIgniter\Database\Exceptions\DataException: There is no primary key defined when trying to make insert.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Model.php on line 358.
+ 1 SYSTEMPATH/Model.php(358): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 07:16:09 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /var/www/html/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `st...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /var/www/html/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(59): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 07:16:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:16:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'8fc8f1d5-2c9a-4b1e-8f1e-fc7f8fc3579d\',\'muepofuw@muvwu.om\',\'$2y$10$Fj2YFpJuee4YAprjySP8suiBZnEG7GAIsdDmFfz.bXKuaA63pgrWK\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:09\',\'2025-05-12 07:16:09\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:09\', \'2025-05-12 07:16:09\', \'fe521cc8-3828-4cf3-8aa8-a1e088f6755a\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'8fc8f1d5-2c9a-4b1e-8f1e-fc7f8fc3579d\',\'muepofuw@muvwu.om\',\'$2y$10$Fj2YFpJuee4YAprjySP8suiBZnEG7GAIsdDmFfz.bXKuaA63pgrWK\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:09\',\'2025-05-12 07:16:09\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:09\', \'2025-05-12 07:16:09\', \'fe521cc8-3828-4cf3-8aa8-a1e088f6755a\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:16:09 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'8fc8f1d5-2c9a-4b1e-8f1e-fc7f8fc3579d\',\'muepofuw@muvwu.om\',\'$2y$10$Fj2YFpJuee4YAprjySP8suiBZnEG7GAIsdDmFfz.bXKuaA63pgrWK\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:09\',\'2025-05-12 07:16:09\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:09\', \'2025-05-12 07:16:09\', \'fe521cc8-3828-4cf3-8aa8-a1e088f6755a\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'8fc8f1d5-2c9a-4b1e-8f1e-fc7f8fc3579d\',\'muepofuw@muvwu.om\',\'$2y$10$Fj2YFpJuee4YAprjySP8suiBZnEG7GAIsdDmFfz.bXKuaA63pgrWK\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:09\',\'2025-05-12 07:16:09\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:09\', \'2025-05-12 07:16:09\', \'fe521cc8-3828-4cf3-8aa8-a1e088f6755a\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'8fc8f1d5-2c9a-4b1e-8f1e-fc7f8fc3579d\',\'muepofuw@muvwu.om\',\'$2y$10$Fj2YFpJuee4YAprjySP8suiBZnEG7GAIsdDmFfz.bXKuaA63pgrWK\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:09\',\'2025-05-12 07:16:09\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:09\', \'2025-05-12 07:16:09\', \'fe521cc8-3828-4cf3-8aa8-a1e088f6755a\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 07:16:47 --> mysqli_sql_exception: Operand should contain 1 column(s) in /var/www/html/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `st...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /var/www/html/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(59): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 07:16:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:16:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'9ff57bda-5dbe-4d22-b3e6-e3a07b78b534\',\'muepofuw@muvwu.om\',\'$2y$10$N83Vx9XP8GEhXUQXv22hluZUf6n0SmTAXHD10vlqgF/wC7gpBoZia\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:47\',\'2025-05-12 07:16:47\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:47\', \'2025-05-12 07:16:47\', \'b17e52b9-aa06-44ee-af41-20dc0713680f\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'9ff57bda-5dbe-4d22-b3e6-e3a07b78b534\',\'muepofuw@muvwu.om\',\'$2y$10$N83Vx9XP8GEhXUQXv22hluZUf6n0SmTAXHD10vlqgF/wC7gpBoZia\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:47\',\'2025-05-12 07:16:47\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:47\', \'2025-05-12 07:16:47\', \'b17e52b9-aa06-44ee-af41-20dc0713680f\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:16:47 --> [Caused by] mysqli_sql_exception: Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'9ff57bda-5dbe-4d22-b3e6-e3a07b78b534\',\'muepofuw@muvwu.om\',\'$2y$10$N83Vx9XP8GEhXUQXv22hluZUf6n0SmTAXHD10vlqgF/wC7gpBoZia\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:47\',\'2025-05-12 07:16:47\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:47\', \'2025-05-12 07:16:47\', \'b17e52b9-aa06-44ee-af41-20dc0713680f\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'9ff57bda-5dbe-4d22-b3e6-e3a07b78b534\',\'muepofuw@muvwu.om\',\'$2y$10$N83Vx9XP8GEhXUQXv22hluZUf6n0SmTAXHD10vlqgF/wC7gpBoZia\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:47\',\'2025-05-12 07:16:47\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:47\', \'2025-05-12 07:16:47\', \'b17e52b9-aa06-44ee-af41-20dc0713680f\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES ((\'9ff57bda-5dbe-4d22-b3e6-e3a07b78b534\',\'muepofuw@muvwu.om\',\'$2y$10$N83Vx9XP8GEhXUQXv22hluZUf6n0SmTAXHD10vlqgF/wC7gpBoZia\',\'Wwvlywznupkpw\',\'8794529316\',\'1968-04-25\',\'2\',\'2025-05-12 07:16:47\',\'2025-05-12 07:16:47\',\'0000-00-00 00:00:00\'), \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:16:47\', \'2025-05-12 07:16:47\', \'b17e52b9-aa06-44ee-af41-20dc0713680f\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-12 07:19:24 --> mysqli_sql_exception: Column 'AccountId' cannot be null in /var/www/html/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `st...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /var/www/html/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /var/www/html/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /var/www/html/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 /var/www/html/app/Controllers/Home.php(59): CodeIgniter\Model->insert(Array)
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-12 07:19:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'AccountId' cannot be null
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:19:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'AccountId' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (NULL, \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:19:24\', \'2025-05-12 07:19:24\', \'c9014eac-6331-49bd-b391-ae66bc527e24\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (NULL, \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:19:24\', \'2025-05-12 07:19:24\', \'c9014eac-6331-49bd-b391-ae66bc527e24\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:19:24 --> [Caused by] mysqli_sql_exception: Column 'AccountId' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (NULL, \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:19:24\', \'2025-05-12 07:19:24\', \'c9014eac-6331-49bd-b391-ae66bc527e24\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (NULL, \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:19:24\', \'2025-05-12 07:19:24\', \'c9014eac-6331-49bd-b391-ae66bc527e24\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (NULL, \'Lwas\', \'hobi\', \'Bo ja cekujiz hozeide tando elwev osacin fuljo favmide ime fizi pero jo pijki eve. Navri putosasof sew zuohsuz cuhu cutjim luzgihgul osni tivbok wid hu inewor. Nebze malin vem mo lopi rovew himapi ji farafa cih fafpuaja geaj fag hop rizgeshev gagitda oje uj. Gogunav jedada iwiwapgi ad te ramasimo keklicci bibgeleb gobcef ha\', \'Kefondu tienuda kot hogi su mebegla akdorew gakmemoj raskirno wi at rolzulzib pe coj vidleg kari sapofbe. Gavpulbuj lisomuja aw uvopomba gauzoen pov jiz zigiw bobi te dobno hid cimlojki jaran ohueziti etiva looh. Cun nebne izpa anoorocu joknoofi icasun iw uw wu hubamoc ivota depgin zebuppi kivnura. Ipke\', \'16\', \'1610\', \'11\', \'2025-05-12 07:19:24\', \'2025-05-12 07:19:24\', \'c9014eac-6331-49bd-b391-ae66bc527e24\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stores` (`AccountId`, `StoreName`, `StoreCategory`, `StoreDescription`, `StoreAddress`, `StoreProvince`, `StoreCity`, `StoreZipCode`, `created_at`, `updated_at`, `StoreId`) VALUES (:AccountId:, :StoreName:, :StoreCategory:, :StoreDescription:, :StoreAddress:, :StoreProvince:, :StoreCity:, :StoreZipCode:, :created_at:, :updated_at:, :StoreId:)', [...], false)
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Home.php(59): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 07:26:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: registrasi]
+in APPPATH/Controllers/Home.php on line 50.
+ 1 APPPATH/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/var/www/html/app/Controllers/Home.php', 50)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 12:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 12:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 14:07:32 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 14:08:17 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:17:39 --> CSRF token verified.
+CRITICAL - 2025-05-12 14:17:39 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 537.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(537): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH/Controllers/Home.php(30): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:26:33 --> CSRF token verified.
+CRITICAL - 2025-05-12 14:26:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 537.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(537): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH/Controllers/Home.php(30): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:27:37 --> CSRF token verified.
+CRITICAL - 2025-05-12 14:27:37 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 537.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(537): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH/Controllers/Home.php(30): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 14:52:26 --> Error: Class "App\Filters\ThrottleFilter" not found
+[Method: GET, Route: registrasi]
+in SYSTEMPATH/Filters/Filters.php on line 299.
+ 1 SYSTEMPATH/Filters/Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\ThrottleFilter')
+ 2 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 14:57:29 --> CSRF token verified.
+CRITICAL - 2025-05-12 14:58:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 14:59:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 15:02:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 15:02:41 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('registrasi', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 15:10:06 --> CSRF token verified.
+DEBUG - 2025-05-12 15:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 15:10:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/custom_404.php"
+[Method: GET, Route: blocked]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/custom_404.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('errors/custom_404', [], true)
+ 3 APPPATH/Config/Routes.php(94): view('errors/custom_404')
+ 4 SYSTEMPATH/CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: blocked\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 15:10:12 --> CSRF token verified.
+DEBUG - 2025-05-12 15:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 15:10:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/custom_404.php"
+[Method: GET, Route: blocked]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/custom_404.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('errors/custom_404', [], true)
+ 3 APPPATH/Config/Routes.php(94): view('errors/custom_404')
+ 4 SYSTEMPATH/CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: blocked\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 15:16:05 --> CSRF token verified.
+DEBUG - 2025-05-12 15:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:16:54 --> CSRF token verified.
+DEBUG - 2025-05-12 15:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 15:35:16 --> CSRF token verified.
+DEBUG - 2025-05-12 16:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:50:01 --> CSRF token verified.
+DEBUG - 2025-05-12 16:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:50:18 --> CSRF token verified.
+DEBUG - 2025-05-12 16:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:50:39 --> CSRF token verified.
+DEBUG - 2025-05-12 16:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:53:13 --> CSRF token verified.
+DEBUG - 2025-05-12 16:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:53:20 --> CSRF token verified.
+DEBUG - 2025-05-12 16:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:58:53 --> CSRF token verified.
+DEBUG - 2025-05-12 16:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 16:59:07 --> CSRF token verified.
+DEBUG - 2025-05-12 16:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 16:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:03:27 --> CSRF token verified.
+DEBUG - 2025-05-12 17:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:03:53 --> CSRF token verified.
+DEBUG - 2025-05-12 17:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:06:38 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: login]
+in APPPATH/Views/auth/login.php on line 25.
+ 1 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('auth/login', [], true)
+ 3 APPPATH/Controllers/Home.php(73): view('auth/login')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->login()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 17:06:56 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: login]
+in APPPATH/Views/auth/login.php on line 25.
+ 1 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('auth/login', [], true)
+ 3 APPPATH/Controllers/Home.php(73): view('auth/login')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->login()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 17:07:09 --> CSRF token verified.
+DEBUG - 2025-05-12 17:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:10:04 --> CSRF token verified.
+DEBUG - 2025-05-12 17:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:11:32 --> CSRF token verified.
+DEBUG - 2025-05-12 17:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:14:10 --> ErrorException: Undefined variable $message
+[Method: GET, Route: asda]
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', '/var/www/html/app/Views/errors/html/error_404.php', 77)
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH/Config/Routes.php(94): view('errors/html/error_404')
+ 6 SYSTEMPATH/CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: asda\'.')
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 17:15:24 --> CSRF token verified.
+DEBUG - 2025-05-12 17:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:15:25 --> ErrorException: Undefined variable $message
+[Method: GET, Route: user/dashboard]
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', '/var/www/html/app/Views/errors/html/error_404.php', 77)
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('errors/html/error_404', [], true)
+ 5 APPPATH/Config/Routes.php(93): view('errors/html/error_404')
+ 6 SYSTEMPATH/CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\User\\Dashboard::index')
+ 7 SYSTEMPATH/CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-12 17:15:55 --> CSRF token verified.
+DEBUG - 2025-05-12 17:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:16:21 --> CSRF token verified.
+DEBUG - 2025-05-12 17:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:18:46 --> CSRF token verified.
+DEBUG - 2025-05-12 17:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:18:46 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+[Method: GET, Route: login]
+in APPPATH/Views/auth/login.php on line 25.
+ 1 APPPATH/Views/auth/login.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$session', '/var/www/html/app/Views/auth/login.php', 25)
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/app/Views/auth/login.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH/Controllers/Home.php(73): view('auth/login')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 17:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:19:54 --> CSRF token verified.
+DEBUG - 2025-05-12 17:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:23:43 --> CSRF token verified.
+DEBUG - 2025-05-12 17:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:24:44 --> CSRF token verified.
+DEBUG - 2025-05-12 17:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:24:50 --> CSRF token verified.
+DEBUG - 2025-05-12 17:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:25:15 --> CSRF token verified.
+DEBUG - 2025-05-12 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:30:25 --> CSRF token verified.
+DEBUG - 2025-05-12 17:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:31:34 --> CSRF token verified.
+DEBUG - 2025-05-12 17:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:31:54 --> CSRF token verified.
+DEBUG - 2025-05-12 17:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:32:32 --> CSRF token verified.
+DEBUG - 2025-05-12 17:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:34:38 --> CSRF token verified.
+DEBUG - 2025-05-12 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:35:06 --> CSRF token verified.
+DEBUG - 2025-05-12 17:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:35:46 --> CSRF token verified.
+DEBUG - 2025-05-12 17:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:36:25 --> CSRF token verified.
+DEBUG - 2025-05-12 17:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:37:00 --> CSRF token verified.
+DEBUG - 2025-05-12 17:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:37:31 --> CSRF token verified.
+DEBUG - 2025-05-12 17:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:38:00 --> CSRF token verified.
+DEBUG - 2025-05-12 17:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:40:42 --> CSRF token verified.
+DEBUG - 2025-05-12 17:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:43:33 --> CSRF token verified.
+DEBUG - 2025-05-12 17:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:43:57 --> CSRF token verified.
+DEBUG - 2025-05-12 17:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:44:08 --> CSRF token verified.
+DEBUG - 2025-05-12 17:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:44:32 --> CSRF token verified.
+DEBUG - 2025-05-12 17:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:44:53 --> CSRF token verified.
+DEBUG - 2025-05-12 17:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:46:24 --> CSRF token verified.
+DEBUG - 2025-05-12 17:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:46:55 --> CSRF token verified.
+DEBUG - 2025-05-12 17:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:46:59 --> CSRF token verified.
+DEBUG - 2025-05-12 17:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:47:04 --> CSRF token verified.
+DEBUG - 2025-05-12 17:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:48:07 --> CSRF token verified.
+DEBUG - 2025-05-12 17:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:50:07 --> CSRF token verified.
+DEBUG - 2025-05-12 17:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:50:52 --> CSRF token verified.
+DEBUG - 2025-05-12 17:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:52:09 --> CSRF token verified.
+DEBUG - 2025-05-12 17:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:52:30 --> CSRF token verified.
+DEBUG - 2025-05-12 17:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:52:37 --> CSRF token verified.
+DEBUG - 2025-05-12 17:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:52:42 --> CSRF token verified.
+DEBUG - 2025-05-12 17:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:53:08 --> CSRF token verified.
+DEBUG - 2025-05-12 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:53:18 --> CSRF token verified.
+DEBUG - 2025-05-12 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:54:19 --> CSRF token verified.
+DEBUG - 2025-05-12 17:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:56:20 --> CSRF token verified.
+DEBUG - 2025-05-12 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:57:10 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: login]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('login', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 17:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 17:57:27 --> CSRF token verified.
+DEBUG - 2025-05-12 17:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 17:59:04 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: login]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('login', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 17:59:08 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: login]
+in SYSTEMPATH/Security/Security.php on line 262.
+ 1 SYSTEMPATH/Security/Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('login', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 17:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 17:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:03:16 --> ErrorException: session_destroy(): Trying to destroy uninitialized session
+[Method: GET, Route: logout]
+in APPPATH/Controllers/Home.php on line 131.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', '/var/www/html/app/Controllers/Home.php', 131)
+ 2 APPPATH/Controllers/Home.php(131): session_destroy()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->logout()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-12 18:04:47 --> Error: Call to undefined function App\Controllers\destroy()
+[Method: GET, Route: logout]
+in APPPATH/Controllers/Home.php on line 131.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:05:14 --> CSRF token verified.
+DEBUG - 2025-05-12 18:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:05:52 --> CSRF token verified.
+DEBUG - 2025-05-12 18:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:07:48 --> CSRF token verified.
+DEBUG - 2025-05-12 18:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:10:43 --> TypeError: App\Controllers\User\Dashboard::index(): Return value must be of type string, none returned
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:11:01 --> ParseError: Unclosed '{' on line 21
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:11:45 --> ParseError: syntax error, unexpected string content "welcome_m"
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:12:15 --> ParseError: Unclosed '('
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:12:49 --> ParseError: Unclosed '{' on line 10
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 23.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:12:58 --> ParseError: Unclosed '{' on line 10
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 23.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:12:59 --> ParseError: Unclosed '{' on line 10
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 23.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:13:00 --> ParseError: Unclosed '{' on line 10
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 23.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:13:46 --> ParseError: syntax error, unexpected string content "welcome_me"
+[Method: GET, Route: user/dashboard]
+in APPPATH/Controllers/User/Dashboard.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/app/Controllers/User/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User\\Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(885): class_exists('\\App\\Controllers\\User\\Dashboard', true)
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:17:01 --> CSRF token verified.
+DEBUG - 2025-05-12 18:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:18:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:19:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main.php', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:19:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main.php', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:20:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:20:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:23:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:23:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:24:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:25:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 18:25:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 4 APPPATH/Controllers/User/Dashboard.php(22): view('user/dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-12 18:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:27:51 --> CSRF token verified.
+DEBUG - 2025-05-12 18:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:28:22 --> CSRF token verified.
+INFO - 2025-05-12 18:28:27 --> CSRF token verified.
+DEBUG - 2025-05-12 18:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 18:35:28 --> CSRF token verified.
+DEBUG - 2025-05-12 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-12 18:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,1027 @@
+DEBUG - 2025-05-13 03:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:10:57 --> CSRF token verified.
+DEBUG - 2025-05-13 04:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:10:57 --> TypeError: App\Models\AccountModel::getAccountById(): Argument #1 ($AccountId) must be of type string, null given, called in /var/www/html/app/Controllers/User/Dashboard.php on line 25
+[Method: GET, Route: user/dashboard]
+in APPPATH/Models/AccountModel.php on line 98.
+ 1 APPPATH/Controllers/User/Dashboard.php(25): App\Models\AccountModel->getAccountById(null)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:11:36 --> TypeError: App\Models\AccountModel::getAccountById(): Argument #1 ($AccountId) must be of type string, null given, called in /var/www/html/app/Controllers/User/Dashboard.php on line 25
+[Method: GET, Route: user/dashboard]
+in APPPATH/Models/AccountModel.php on line 98.
+ 1 APPPATH/Controllers/User/Dashboard.php(25): App\Models\AccountModel->getAccountById(null)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:12:03 --> TypeError: App\Models\AccountModel::getAccountById(): Argument #1 ($AccountId) must be of type string, null given, called in /var/www/html/app/Controllers/User/Dashboard.php on line 25
+[Method: GET, Route: user/dashboard]
+in APPPATH/Models/AccountModel.php on line 98.
+ 1 APPPATH/Controllers/User/Dashboard.php(25): App\Models\AccountModel->getAccountById(null)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:14:19 --> TypeError: App\Models\AccountModel::getAccountById(): Argument #1 ($AccountId) must be of type string, null given, called in /var/www/html/app/Controllers/User/Dashboard.php on line 26
+[Method: GET, Route: user/dashboard]
+in APPPATH/Models/AccountModel.php on line 98.
+ 1 APPPATH/Controllers/User/Dashboard.php(26): App\Models\AccountModel->getAccountById(null)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:15:28 --> CSRF token verified.
+DEBUG - 2025-05-13 04:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:15:34 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\StoreModel::getStoreData
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Model.php on line 930.
+ 1 APPPATH/Controllers/User/Dashboard.php(27): CodeIgniter\Model->__call('getStoreData', [])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:21:53 --> CSRF token verified.
+DEBUG - 2025-05-13 04:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:26:30 --> CSRF token verified.
+DEBUG - 2025-05-13 04:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:27:12 --> CSRF token verified.
+DEBUG - 2025-05-13 04:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:28:28 --> ErrorException: Undefined variable $title
+[Method: GET, Route: user/dashboard]
+in APPPATH/Views/user/layout/main.php on line 7.
+ 1 APPPATH/Views/user/layout/main.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', '/var/www/html/app/Views/user/layout/main.php', 7)
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/app/Views/user/layout/main.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('user/layout/main', [], true)
+ 5 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 6 APPPATH/Controllers/User/Dashboard.php(29): view('user/dashboard')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:38:43 --> CSRF token verified.
+DEBUG - 2025-05-13 04:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 04:44:57 --> CSRF token verified.
+DEBUG - 2025-05-13 04:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:45:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/user.php"
+[Method: GET, Route: user/penjualan]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/user.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('layouts/user', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/penjualan', [], true)
+ 4 APPPATH/Controllers/User/Penjualan.php(29): view('user/penjualan', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Penjualan->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Penjualan))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 04:46:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/layout.php"
+[Method: GET, Route: user/penjualan]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/layout.php')
+ 2 SYSTEMPATH/View/View.php(240): CodeIgniter\View\View->render('user/layout', [], true)
+ 3 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/penjualan', [], true)
+ 4 APPPATH/Controllers/User/Penjualan.php(29): view('user/penjualan', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Penjualan->index()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Penjualan))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 04:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 04:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 05:10:27 --> CSRF token verified.
+DEBUG - 2025-05-13 05:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 05:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 07:15:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "jakshd;las"
+[Method: GET, Route: WhatsApp/jakshd;las]
+in SYSTEMPATH/Router/Router.php on line 741.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('WhatsApp/jakshd;las')
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle('WhatsApp/jakshd;las')
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 07:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 07:17:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Connection\WhatsApp::index(), 0 passed in /var/www/html/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connection/WhatsApp/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 07:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 07:24:14 --> mysqli_sql_exception: Unknown column 'stores.deleted_at' in 'where clause' in /var/www/html/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/html/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/system/BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 /var/www/html/app/Models/StoreModel.php(61): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/app/Controllers/Connection/WhatsApp.php(28): App\Models\StoreModel->getStoreByAccountId('998ceb81-e9bb-4...')
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index('998ceb81-e9bb-4...')
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-13 07:24:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stores.deleted_at' in 'where clause'
+[Method: GET, Route: Connection/WhatsApp/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stores`
+WHERE `AccountId` = :AccountId:
+AND `stores`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/StoreModel.php(61): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(28): App\Models\StoreModel->getStoreByAccountId('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 07:24:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stores.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `stores`
+WHERE `AccountId` = \'998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6\'
+AND `stores`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `stores`
+WHERE `AccountId` = \'998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6\'
+AND `stores`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stores`
+WHERE `AccountId` = :AccountId:
+AND `stores`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/StoreModel.php(61): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Connection/WhatsApp.php(28): App\Models\StoreModel->getStoreByAccountId('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-13 07:24:14 --> [Caused by] mysqli_sql_exception: Unknown column 'stores.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT *
+FROM `stores`
+WHERE `AccountId` = \'998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6\'
+AND `stores`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `stores`
+WHERE `AccountId` = \'998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6\'
+AND `stores`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `stores`
+WHERE `AccountId` = \'998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6\'
+AND `stores`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stores`
+WHERE `AccountId` = :AccountId:
+AND `stores`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/StoreModel.php(61): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Connection/WhatsApp.php(28): App\Models\StoreModel->getStoreByAccountId('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+10 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 07:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 07:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 08:44:22 --> ErrorException: Undefined array key "StoreId"
+[Method: POST, Route: Connection/WhatsApp/Create/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 78.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "StoreId"', '/var/www/html/app/Controllers/Connection/WhatsApp.php', 78)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->Create('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 08:44:49 --> ErrorException: Undefined array key "StoreId"
+[Method: POST, Route: Connection/WhatsApp/Create/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 78.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "StoreId"', '/var/www/html/app/Controllers/Connection/WhatsApp.php', 78)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->Create('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 08:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 08:49:04 --> ErrorException: Array to string conversion
+[Method: POST, Route: Connection/WhatsApp/Create/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 115.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/var/www/html/app/Controllers/Connection/WhatsApp.php', 115)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->Create('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 08:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-13 08:49:58 --> ErrorException: Array to string conversion
+[Method: POST, Route: Connection/WhatsApp/Create/998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 115.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/var/www/html/app/Controllers/Connection/WhatsApp.php', 115)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->Create('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Connection\WhatsApp))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 08:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 08:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 09:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:14:26 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:14:26 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 10:14:26 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 10:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:20:32 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:20:32 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 10:20:32 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:21:38 --> Creating WhatsApp device: http://WaConnection:3000/api/device/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:21:38 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 10:21:38 --> WhatsApp API create responded with status: 404
+INFO - 2025-05-13 10:21:38 --> Response body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /api/device/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361</pre>
+</body>
+</html>
+
+DEBUG - 2025-05-13 10:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:24:15 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:24:15 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 10:24:15 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 10:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:24:17 --> Creating WhatsApp device: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:24:17 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 10:24:17 --> WhatsApp API create responded with status: 404
+INFO - 2025-05-13 10:24:17 --> Response body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361</pre>
+</body>
+</html>
+
+DEBUG - 2025-05-13 10:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 10:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:24:50 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 10:24:50 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 10:24:50 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 10:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 10:24:51 --> Creating WhatsApp device: http://WaConnection:3000/api/devices/
+INFO - 2025-05-13 10:24:51 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 10:24:51 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 10:24:51 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 11:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 11:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 11:25:58 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `Account...', Array, false)
+#4 /var/www/html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 /var/www/html/app/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+#7 /var/www/html/app/Controllers/User/Dashboard.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4...')
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `Account...', Array, false)
+#3 /var/www/html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 /var/www/html/app/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+#6 /var/www/html/app/Controllers/User/Dashboard.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4...')
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-13 11:25:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: GET, Route: user/dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `AccountId`, `Email`, `FullName`, `PhoneNumber`, `BirthDate`
+FROM `accounts`
+WHERE `AccountId` = :AccountId:
+AND `accounts`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/User/Dashboard.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 11:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 11:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:04:03 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 13:04:03 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 13:04:03 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 13:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:04:31 --> Creating WhatsApp device: http://WaConnection:3000/api/devices/
+INFO - 2025-05-13 13:04:31 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 13:04:31 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 13:04:31 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 13:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:22:40 --> Calling WhatsApp API: http://WaConnection:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 13:22:40 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 13:22:40 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 13:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:22:42 --> Creating WhatsApp device: http://WaConnection:3000/api/devices/
+INFO - 2025-05-13 13:22:42 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 13:22:42 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 13:22:42 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 13:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-13 13:47:55 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/var/www/html/s...', 201)
+#1 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 3306, '', 0)
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `Account...', Array, false)
+#5 /var/www/html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#7 /var/www/html/app/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+#8 /var/www/html/app/Controllers/User/SosmedConnection.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4...')
+#9 /var/www/html/system/CodeIgniter.php(933): App\Controllers\User\SosmedConnection->index()
+#10 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\SosmedConnection))
+#11 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /var/www/html/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('MySQL', 'Jualin', Object(SensitiveParameterValue), 'Jualin', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `Account...', Array, false)
+#4 /var/www/html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 /var/www/html/app/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+#7 /var/www/html/app/Controllers/User/SosmedConnection.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4...')
+#8 /var/www/html/system/CodeIgniter.php(933): App\Controllers\User\SosmedConnection->index()
+#9 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\SosmedConnection))
+#10 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /var/www/html/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `Account...', Array, false)
+#3 /var/www/html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 /var/www/html/app/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+#6 /var/www/html/app/Controllers/User/SosmedConnection.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4...')
+#7 /var/www/html/system/CodeIgniter.php(933): App\Controllers\User\SosmedConnection->index()
+#8 /var/www/html/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\SosmedConnection))
+#9 /var/www/html/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /var/www/html/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-13 13:47:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known
+[Method: GET, Route: user/connection]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `AccountId`, `Email`, `FullName`, `PhoneNumber`, `BirthDate`
+FROM `accounts`
+WHERE `AccountId` = :AccountId:
+AND `accounts`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/AccountModel.php(103): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/User/SosmedConnection.php(26): App\Models\AccountModel->getAccountById('998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User\SosmedConnection->index()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\SosmedConnection))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-13 13:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:48:15 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 13:48:15 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 13:48:15 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 13:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:48:21 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 13:48:21 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 13:48:21 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 13:48:21 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 13:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 13:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:57:50 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 13:57:50 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 13:57:50 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 13:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 13:57:53 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 13:57:53 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 13:57:53 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 13:57:53 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 14:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:01:12 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:01:12 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:01:12 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747144837065}}
+DEBUG - 2025-05-13 14:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:01:24 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:01:24 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:01:24 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747144837065}}
+DEBUG - 2025-05-13 14:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:03:58 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:03:58 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:03:58 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145028711}}
+DEBUG - 2025-05-13 14:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:05:18 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:05:18 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:05:18 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145048715}}
+DEBUG - 2025-05-13 14:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:05:24 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:05:24 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:05:24 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145120036}}
+DEBUG - 2025-05-13 14:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:05:54 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:05:54 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:05:54 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145120036}}
+DEBUG - 2025-05-13 14:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:06:12 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:06:12 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:06:12 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145120036}}
+DEBUG - 2025-05-13 14:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:06:18 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:06:18 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:06:18 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145120036}}
+DEBUG - 2025-05-13 14:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:07:37 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:07:37 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:07:37 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145240044}}
+DEBUG - 2025-05-13 14:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:07:59 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:07:59 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:07:59 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145260045}}
+DEBUG - 2025-05-13 14:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:08:25 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:08:25 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:08:25 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145260045}}
+DEBUG - 2025-05-13 14:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:08:32 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:08:32 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:08:32 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145260045}}
+DEBUG - 2025-05-13 14:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:03 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:11:03 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:11:03 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145456504}}
+DEBUG - 2025-05-13 14:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:11:14 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:11:14 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:11:14 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145456504}}
+DEBUG - 2025-05-13 14:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:17:56 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:17:56 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:17:56 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145859749}}
+DEBUG - 2025-05-13 14:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:18:24 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:18:24 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:18:24 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145899755}}
+DEBUG - 2025-05-13 14:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:19:10 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:19:10 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:19:10 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145919757}}
+DEBUG - 2025-05-13 14:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:19:55 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:19:55 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:19:55 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747145919757}}
+DEBUG - 2025-05-13 14:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:39:40 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 14:39:40 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 14:39:40 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 14:39:40 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 14:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:42:53 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:42:53 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:42:53 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147359273}}
+DEBUG - 2025-05-13 14:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:44:29 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:44:29 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:44:29 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147431556}}
+DEBUG - 2025-05-13 14:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:45:18 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:45:18 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:45:18 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147511559}}
+DEBUG - 2025-05-13 14:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:45:28 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:45:28 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:45:28 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147511559}}
+DEBUG - 2025-05-13 14:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:46:04 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:46:04 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:46:04 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147551566}}
+DEBUG - 2025-05-13 14:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:46:41 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:46:41 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:46:41 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147571598}}
+DEBUG - 2025-05-13 14:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:50:37 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:50:37 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:50:37 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":null,"lastActive":1747147813108}}
+DEBUG - 2025-05-13 14:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:58:08 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:58:08 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 14:58:08 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 14:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:58:34 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 14:58:34 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 14:58:34 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 14:58:34 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 14:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 14:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 14:59:16 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 14:59:16 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 14:59:16 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"unknown","pushname":"unknown"},"lastActive":1747148347568}}
+DEBUG - 2025-05-13 15:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:05:55 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:05:55 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:05:55 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:05:58 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:05:58 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:05:58 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:05:58 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:06:38 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:06:38 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:06:38 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"unknown","pushname":"unknown"},"lastActive":1747148768397}}
+DEBUG - 2025-05-13 15:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:08:26 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:08:26 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:08:26 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:08:53 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:08:53 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:08:53 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:08:53 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:13:36 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:13:36 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:13:36 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:13:52 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:13:52 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:13:52 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:13:52 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:14:32 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:14:32 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:14:32 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747149262538}}
+DEBUG - 2025-05-13 15:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:15:09 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:15:09 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:15:09 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747149307200}}
+DEBUG - 2025-05-13 15:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:15:53 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:15:53 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:15:53 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747149352638}}
+DEBUG - 2025-05-13 15:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:19:51 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:19:51 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:19:51 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:19:54 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:19:54 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:19:54 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:19:54 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:31:38 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+DEBUG - 2025-05-13 15:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:31:56 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:31:56 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+DEBUG - 2025-05-13 15:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:32:04 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+DEBUG - 2025-05-13 15:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:32:28 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:32:28 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:32:28 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:32:28 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:33:09 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:33:09 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:33:09 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747150377355}}
+DEBUG - 2025-05-13 15:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:33:55 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:33:55 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:33:55 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747150407845}}
+DEBUG - 2025-05-13 15:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:34:27 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:34:27 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:34:27 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:34:29 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:34:29 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:34:29 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:34:29 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:35:11 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:35:11 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:35:11 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747150503461}}
+DEBUG - 2025-05-13 15:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:36:54 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:36:54 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:36:54 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747150574814}}
+DEBUG - 2025-05-13 15:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:42:57 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:42:57 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:42:57 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:43:11 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:43:11 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:43:11 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:43:11 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:44:01 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:44:01 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:44:01 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747151018464}}
+DEBUG - 2025-05-13 15:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:44:28 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:44:28 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:44:28 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"qr_ready","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747151066432}}
+DEBUG - 2025-05-13 15:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:52:43 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:52:44 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:52:44 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:54:11 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:54:11 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:54:11 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:54:11 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:54:55 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:54:55 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:54:55 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"error","info":null,"lastActive":1747151651753}}
+DEBUG - 2025-05-13 15:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:55:19 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:55:19 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:55:19 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"error","info":null,"lastActive":1747151651753}}
+DEBUG - 2025-05-13 15:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:55:34 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:55:34 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:55:34 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:55:41 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:55:41 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:55:41 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:55:41 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 15:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:56:18 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:56:18 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 15:56:18 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"connected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747151771142}}
+DEBUG - 2025-05-13 15:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 15:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:57:33 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 15:57:33 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 15:57:33 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 15:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 15:57:35 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 15:57:35 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 15:57:36 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 15:57:36 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 16:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:05:19 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 16:05:19 --> WhatsApp API responded with status: 404
+INFO - 2025-05-13 16:05:19 --> Response body: {"error":"Device ad22aaf8-5f7f-4b3d-8391-fc17d4f19361 not found"}
+DEBUG - 2025-05-13 16:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:05:30 --> Creating WhatsApp device: http://192.168.1.9:3000/api/devices/
+INFO - 2025-05-13 16:05:30 --> Store data: {"StoreId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","AccountId":"998ceb81-e9bb-4644-8ed3-0f43e1d9dbf6","StoreName":"Jualin","StoreCategory":"elektronik","StoreDescription":"Lezemaf pohove melu waamiepi lid wip buvpikev bucmef funcevsu wo zikagne weklu dubefeg woawi hapni co. Vazkobosi tawap hehwuh pij du egkiple ase jaf no sa hewbo hah cewgoaco rocivsa ceh vimte. Ji tos nit jamo fodida wa ke wentu us od nujtezjib be diat zewop litedni. Vezedki vaaf noune dijco tecib","StoreAddress":"Naju zizsab sil jodam daabe epka obefe resabu kolbebre cuk mo zanesi husegga eza lim vifimu lonrudez ru. Gi dogev egtu nahti ta iffi wuvehi ku wuaweca gepurne itaeja putuf. Zuphim re nawmu hortifigu po cerli avtug fog ahgu ebikomu ji diluul otji zanek liodwu mutuz. Z","StoreProvince":"11","StoreCity":"1109","StoreZipCode":"212","created_at":"2025-05-12 13:09:15","updated_at":"2025-05-12 13:09:15","deleted_at":"0000-00-00 00:00:00"}
+INFO - 2025-05-13 16:05:30 --> WhatsApp API create responded with status: 201
+INFO - 2025-05-13 16:05:30 --> Response body: {"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"initializing","message":"Device created. Scan the QR code to connect.","qrScanUrl":"/qr-scanner/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361"}
+DEBUG - 2025-05-13 16:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:06:50 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+INFO - 2025-05-13 16:06:50 --> WhatsApp API responded with status: 200
+INFO - 2025-05-13 16:06:50 --> Response body: {"device":{"deviceId":"ad22aaf8-5f7f-4b3d-8391-fc17d4f19361","status":"disconnected","info":{"number":"6289507607171","pushname":"kartinisalmanalfarisi"},"lastActive":1747152370417}}
+DEBUG - 2025-05-13 16:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-13 16:18:16 --> Calling WhatsApp API: http://192.168.1.9:3000/api/devices/ad22aaf8-5f7f-4b3d-8391-fc17d4f19361
+DEBUG - 2025-05-13 16:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-13 16:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,781 @@
+ERROR - 2025-06-12 15:30:42 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#2 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#3 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#4 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#7 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/app/Controllers/Home.php(41): CodeIgniter\BaseModel->first()
+#8 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#9 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#10 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/app/Controllers/Home.php(41): CodeIgniter\BaseModel->first()
+#7 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#8 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known in /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/app/Controllers/Home.php(41): CodeIgniter\BaseModel->first()
+#6 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+#7 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/mazeluna/Codingan/asalasal/JualinFE/Jualin/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-06-12 15:30:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for MySQL failed: Name or service not known
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(41): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->prosesRegistrasi()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+INFO - 2025-06-12 15:32:18 --> CSRF token verified.
+DEBUG - 2025-06-12 15:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 15:32:47 --> Calling WhatsApp API: http://192.168.200.209:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+DEBUG - 2025-06-12 15:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 15:45:25 --> Calling WhatsApp API: http://localhost:3000/api/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 15:45:25 --> WhatsApp API responded with status: 404
+INFO - 2025-06-12 15:45:25 --> Response body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f</pre>
+</body>
+</html>
+
+DEBUG - 2025-06-12 15:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 15:47:00 --> Creating WhatsApp device: http://localhost:3000/api/api/devices/
+INFO - 2025-06-12 15:47:00 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 15:47:01 --> WhatsApp API create responded with status: 404
+INFO - 2025-06-12 15:47:01 --> Response body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /api/api/devices/</pre>
+</body>
+</html>
+
+DEBUG - 2025-06-12 15:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 15:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 15:55:11 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 15:55:12 --> WhatsApp API responded with status: 404
+INFO - 2025-06-12 15:55:12 --> Response body: {"success":false,"error":"Device 13fbd769-1996-4bf5-91ad-63c4877f360f not found"}
+DEBUG - 2025-06-12 16:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:04:52 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+DEBUG - 2025-06-12 16:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:05:46 --> Creating WhatsApp device: http://localhost:3000/api/api/devices/
+INFO - 2025-06-12 16:05:46 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 16:05:46 --> WhatsApp API create responded with status: 404
+INFO - 2025-06-12 16:05:46 --> Response body: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /api/api/devices/</pre>
+</body>
+</html>
+
+DEBUG - 2025-06-12 16:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:05:52 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+DEBUG - 2025-06-12 16:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:34:32 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:34:32 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(85): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:38:58 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:38:58 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(85): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:40:35 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:40:35 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(85): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:43:43 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:43:43 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(88): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:43:59 --> Creating WhatsApp device: http://localhost:3000/api/api/devices/
+INFO - 2025-06-12 16:43:59 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+DEBUG - 2025-06-12 16:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:44:05 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:44:05 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(88): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:46:15 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:46:15 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:47:17 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:47:17 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:47:46 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:47:46 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 16:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:47:49 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 16:47:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 16:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 16:49:29 --> Creating WhatsApp device: http://localhost:3000/api/api/devices/
+INFO - 2025-06-12 16:49:29 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+DEBUG - 2025-06-12 17:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:00:29 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:00:29 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:00:31 --> Creating WhatsApp device: http://localhost:3000/api/devices/
+INFO - 2025-06-12 17:00:31 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 17:00:43 --> WhatsApp API create responded with status: 200
+INFO - 2025-06-12 17:00:43 --> Response body: {"success":true,"data":{"success":true,"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","message":"Device initialization started"},"message":"Device creation initiated. Check QR code endpoint or listen to socket events."}
+DEBUG - 2025-06-12 17:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:05:35 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:05:35 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:08:16 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:08:16 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:08:19 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:08:19 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:09:21 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:09:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:11:46 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:11:46 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(42): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:14:41 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:14:41 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(40): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:15:02 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:15:02 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(40): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:15:55 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:15:55 --> ErrorException: Undefined variable $client
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 39.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-12 17:16:06 --> Error: Class "GuzzleHttp\Client" not found
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:16:15 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:16:15 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(40): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:17:17 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:17:17 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(41): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:17:31 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:17:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(41): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:17:42 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:17:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(41): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:24:02 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:24:02 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(41): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:25:14 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+CRITICAL - 2025-06-12 17:25:14 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(41): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:26:36 --> Creating WhatsApp device: http://localhost:3000/api/devices/
+INFO - 2025-06-12 17:26:36 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 17:26:47 --> WhatsApp API create responded with status: 200
+INFO - 2025-06-12 17:26:47 --> Response body: {"success":true,"data":{"success":true,"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","message":"Device initialization started"},"message":"Device creation initiated. Check QR code endpoint or listen to socket events."}
+DEBUG - 2025-06-12 17:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:29:03 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:29:03 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:29:03 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+CRITICAL - 2025-06-12 17:29:03 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 2 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:30:21 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:30:21 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:30:21 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+CRITICAL - 2025-06-12 17:30:21 --> ErrorException: Undefined array key "device"
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 55.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:34:22 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:34:22 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:34:22 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+CRITICAL - 2025-06-12 17:34:22 --> ErrorException: Undefined array key "deviceId"
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 56.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:35:15 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:35:15 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:35:15 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+CRITICAL - 2025-06-12 17:35:15 --> ErrorException: Attempt to read property "deviceId" on array
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in APPPATH/Controllers/Connection/WhatsApp.php on line 56.
+ 1 APPPATH/Controllers/Connection/WhatsApp.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:36:41 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:36:41 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:36:41 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+CRITICAL - 2025-06-12 17:36:41 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: GET, Route: Connection/WhatsApp/fb6c5b17-ca63-4c60-8780-a559a92a9569]
+in SYSTEMPATH/HTTP/CURLRequest.php on line 711.
+ 1 SYSTEMPATH/HTTP/CURLRequest.php(711): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH/HTTP/CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH/HTTP/CURLRequest.php(150): CodeIgniter\HTTP\CURLRequest->send()
+ 4 SYSTEMPATH/HTTP/CURLRequest.php(185): CodeIgniter\HTTP\CURLRequest->request()
+ 5 APPPATH/Controllers/Connection/WhatsApp.php(72): CodeIgniter\HTTP\CURLRequest->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connection\WhatsApp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/mazeluna/Codingan/asalasal/JualinFE/Jualin/public/index.php')
+DEBUG - 2025-06-12 17:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:38:54 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:38:54 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:38:54 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 17:38:54 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 17:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:43:49 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:43:49 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:43:49 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 17:43:49 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 17:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:54:26 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:54:26 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:54:26 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 17:54:26 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 17:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:56:55 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:56:55 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:56:55 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 17:56:55 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 17:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 17:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 17:57:30 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 17:57:30 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 17:57:30 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 17:57:30 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 17:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:02:42 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:02:42 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:02:42 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:02:42 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:05:24 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:05:24 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:05:24 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:05:24 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:06:39 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:06:39 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:06:39 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:06:39 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:08:42 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:08:42 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:08:42 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:08:42 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:11:06 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:11:06 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:11:06 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6289507607171","name":"kartinisalmanalfarisi","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:11:06 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:12:58 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+ERROR - 2025-06-12 18:12:58 --> Exception while calling WhatsApp API: 22 : The requested URL returned error: 404
+ERROR - 2025-06-12 18:12:58 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:13:08 --> Creating WhatsApp device: http://localhost:3000/api/devices/
+INFO - 2025-06-12 18:13:08 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 18:13:20 --> WhatsApp API create responded with status: 200
+INFO - 2025-06-12 18:13:20 --> Response body: {"success":true,"data":{"success":true,"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","message":"Device initialization started"},"message":"Device creation initiated. Check QR code endpoint or listen to socket events."}
+DEBUG - 2025-06-12 18:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:14:05 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:14:05 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:14:05 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6287739029292","name":"Aql","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:14:05 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:15:46 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:15:46 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:15:46 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6287739029292","name":"Aql","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:15:46 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:56:54 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+ERROR - 2025-06-12 18:56:54 --> Exception while calling WhatsApp API: 22 : The requested URL returned error: 404
+ERROR - 2025-06-12 18:56:54 --> Exception while getting QR code: 22 : The requested URL returned error: 404
+DEBUG - 2025-06-12 18:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:57:09 --> Creating WhatsApp device: http://localhost:3000/api/devices/
+INFO - 2025-06-12 18:57:09 --> Store data: {"StoreId":"13fbd769-1996-4bf5-91ad-63c4877f360f","AccountId":"fb6c5b17-ca63-4c60-8780-a559a92a9569","StoreName":"GadgedGenius","StoreCategory":"elektronik","StoreDescription":"Toko Service Handphone","StoreAddress":"Jalan raya sungai nipah","StoreProvince":"61","StoreCity":"6171","StoreZipCode":"78351","created_at":"2025-06-12 15:32:02","updated_at":"2025-06-12 15:32:02","deleted_at":null}
+INFO - 2025-06-12 18:57:18 --> WhatsApp API create responded with status: 200
+INFO - 2025-06-12 18:57:18 --> Response body: {"success":true,"data":{"success":true,"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","message":"Device initialization started"},"message":"Device creation initiated. Check QR code endpoint or listen to socket events."}
+DEBUG - 2025-06-12 18:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-12 18:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-12 18:57:26 --> Calling WhatsApp API: http://localhost:3000/api/devices/13fbd769-1996-4bf5-91ad-63c4877f360f
+INFO - 2025-06-12 18:57:26 --> WhatsApp API responded with status: 200
+INFO - 2025-06-12 18:57:26 --> Response body: {"success":true,"data":{"deviceId":"13fbd769-1996-4bf5-91ad-63c4877f360f","phone":"6287739029292","name":"Aql","platform":"android","status":"ready"}}
+ERROR - 2025-06-12 18:57:26 --> Exception while getting QR code: 22 : The requested URL returned error: 404
